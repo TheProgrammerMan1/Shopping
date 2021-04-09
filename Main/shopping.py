@@ -14,6 +14,7 @@ if language == 'PT-BR' or language == 'PT':
         name = product['name']
         print(f'{name}, {price:.2f}')
 
+
     def shopping_cart():
         global value1, value2, value3, value4
 
@@ -144,6 +145,7 @@ if language == 'PT-BR' or language == 'PT':
 
         calc(value1, value2, value3, value4)
 
+
     shopping_cart()
 
 elif language == 'EN-US' or language == 'EN':
@@ -160,19 +162,33 @@ elif language == 'EN-US' or language == 'EN':
         name = product['name']
         print(f'{name}, {price:.2f}')
 
+
     def shopping_cart():
         global value1
         global value2
         global value3
         global value4
+
         cart = []
         item1 = input('First item: ').title()
+        if item1 == 'exit':
+            print('exited')
+            return
         amount1 = int(input('First item amount: '))
         item2 = input('Second item: ').title()
+        if item2 == 'exit':
+            print('exited')
+            return
         amount2 = int(input('Second item amount: '))
         item3 = input('Third item: ').title()
+        if item3 == 'exit':
+            print('exited')
+            return
         amount3 = int(input('Third item amount: '))
         item4 = input('Fourth item: ').title()
+        if item4 == 'exit':
+            print('exited')
+            return
         amount4 = int(input('Fourth item amount: '))
 
         if item1 == 'Rice':
@@ -280,6 +296,7 @@ elif language == 'EN-US' or language == 'EN':
 
         calc(value1, value2, value3, value4)
 
+
     shopping_cart()
 
 elif language == 'ES-AR' or language == 'ES':
@@ -296,6 +313,7 @@ elif language == 'ES-AR' or language == 'ES':
         name = product['name']
         print(f'{name}, {price:.2f}')
 
+
     def shopping_cart():
         global value1
         global value2
@@ -303,12 +321,24 @@ elif language == 'ES-AR' or language == 'ES':
         global value4
         cart = []
         item1 = input('Primer elemento: ').title()
+        if item1 == 'Salir':
+            print('Salido')
+            return
         amount1 = int(input('Cantidad del primer elemento: '))
         item2 = input('Segundo elemento: ').title()
+        if item2 == 'Salir':
+            print('Salido')
+            return
         amount2 = int(input('Cantidad del segundo elemento: '))
         item3 = input('Tercer elemento: ').title()
+        if item3 == 'Salir':
+            print('Salido')
+            return
         amount3 = int(input('Cantidad del tercer elemento: '))
         item4 = input('Cuarto elemento: ').title()
+        if item4 == 'Salir':
+            print('Salido')
+            return
         amount4 = int(input('Cantidad del cuarto elemento: '))
 
         if item1 == 'Arroz':
@@ -416,6 +446,5 @@ elif language == 'ES-AR' or language == 'ES':
 
         calc(value1, value2, value3, value4)
 
+
     shopping_cart()
-
-
