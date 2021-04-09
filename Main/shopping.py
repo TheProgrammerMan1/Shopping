@@ -148,6 +148,8 @@ if language == 'PT-BR' or language == 'PT':
 
     shopping_cart()
 
+# English US 
+
 elif language == 'EN-US' or language == 'EN':
     product_list = [
         {'name': 'Rice', 'price': 20 / 5.4, 'id': 1, 'amount': 1},
@@ -299,6 +301,8 @@ elif language == 'EN-US' or language == 'EN':
 
     shopping_cart()
 
+# Spanish Argentina
+    
 elif language == 'ES-AR' or language == 'ES':
     product_list = [
         {'name': 'Arroz', 'price': 20 * 15.99, 'id': 1, 'amount': 1},
