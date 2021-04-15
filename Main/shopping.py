@@ -302,7 +302,7 @@ def shopping():
             print('\n')
 
             leave = input('Wanna leave? y/n: ').upper()
-            if leave == 'N  ':
+            if leave == 'N':
                 shopping()
             else:
                 return
